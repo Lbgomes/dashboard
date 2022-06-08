@@ -19,7 +19,8 @@ const Dashboard = () => {
             color="#fff">
                 <s.Flex
                 flexDir="column"
-                justifyContent="space-between">
+                justifyContent="space-between"
+                h="100vh">
                     <s.Flex
                     flexDir="column"
                     as="nav">
@@ -48,7 +49,7 @@ const Dashboard = () => {
                                     <s.Icon as={svg.FiPieChart} fontSize="2xl"/>
                                 </s.Link>
                                 <s.Link _hover={{textDecor: 'none'}}>
-                                    <s.Text className="">Credit</s.Text>
+                                    <s.Text>Credit</s.Text>
                                 </s.Link>
                             </s.Flex>
                             <s.Flex className="sidebar-items">
@@ -56,7 +57,7 @@ const Dashboard = () => {
                                     <s.Icon as={svg.FiDollarSign} fontSize="2xl" />
                                 </s.Link>
                                 <s.Link _hover={{textDecor: 'none'}}>
-                                    <s.Text className="">Wallet</s.Text>
+                                    <s.Text>Wallet</s.Text>
                                 </s.Link>
                             </s.Flex>
                             <s.Flex className="sidebar-items">
@@ -64,19 +65,37 @@ const Dashboard = () => {
                                     <s.Icon as={svg.FiBox} fontSize="2xl"/>
                                 </s.Link>
                                 <s.Link _hover={{textDecor: 'none'}}>
-                                    <s.Text className="">Services</s.Text>
+                                    <s.Text>Services</s.Text>
                                 </s.Link>
                             </s.Flex>
                         </s.Flex>
                     </s.Flex>
-
+                    <s.Flex
+                        flexDir="column"
+                        alignItems="center"
+                        mb={10}
+                        mt={5}>
+                        <s.Avatar my={2} src="profile.jpeg"/>
+                        <s.Text>Murilo Gomes</s.Text>
+                    </s.Flex>
                 </s.Flex>
         </s.Flex>
         {/* column 2 */}
-        <s.Flex>
+        <s.Flex
+            w="55%"
+            p="3%"
+            flexDir="column"
+            overflow="auto"
+            minH="100vh"
+            >
         </s.Flex>
         {/* column 3 */}
-        <s.Flex>
+        <s.Flex
+        w="35%"
+        bgColor="#f5f5f5"
+        p="3%"
+        flexDir="column"
+        overflow="auto">
         </s.Flex>
         
         </s.Flex>
