@@ -44,3 +44,40 @@ a {
 .sidebar-items:not(:last-child) {
     margin-bottom: 1em;
 }
+
+@media (max-width: 768px) {
+    .sidebar-items {
+        margin-bottom: 0 !important;
+    }
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 20px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
